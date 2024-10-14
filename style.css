@@ -1,0 +1,153 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  margin: 0;
+  padding: 0;
+  width: 300px; /* Fixed width */
+  height: auto; /* Let content dictate height */
+  position: relative; /* Relative positioning for layering */
+}
+
+
+/* Background logo styling */
+#background-logo {
+  position: absolute; /* Positioning the logo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('logo.png'); /* Path to your logo */
+  background-size: cover; /* Cover the entire area */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the logo */
+  opacity: 0.1; /* Faded effect */
+  z-index: 0; /* Layer behind other content */
+}
+
+/* Form container styling */
+form {
+  position: relative; /* Relative positioning for layering */
+  background-color: rgba(18, 18, 18, 0.8); /* Slightly transparent background for the form */
+  padding: 20px; /* Adjust padding for a comfortable size */
+  border-radius: 8px; /* Rounded corners */
+  z-index: 1; /* Ensure form is above the background */
+  margin-top: 40px; /* Margin to push down the form */
+}
+
+/* Form styling */
+input[type="text"], input[type="time"] {
+  padding: 10px;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  font-size: 1em;
+  width: calc(100% - 22px);
+  box-sizing: border-box;
+  background-color: #333; /* Dark input background */
+  color: #e0e0e0; /* Light text color */
+  margin-bottom: 10px; /* Space between inputs */
+}
+
+h2 {
+  color: #0056b3; /* PakWheels blue */
+  font-size: 1.5em;
+  margin-bottom: 15px; /* Margin below heading */
+}
+
+/* Button styling */
+button {
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make buttons full width */
+  margin-top: 5px; /* Space between buttons */
+}
+
+/* Button colors */
+button#addReminder {
+  background-color: #0056b3; /* PakWheels red color */
+}
+
+button#clearAll {
+  background-color: #dc3545; /* PakWheels blue color */
+}
+
+button#addReminder:hover {
+  background-color: #004085; /* Darker shade on hover */
+}
+
+button#clearAll:hover {
+  background-color: #c82333; /* Darker blue on hover */
+}
+
+/* Reminder list styling */
+#reminderList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Margin above the list */
+  max-height: 300px; /* Optional: Limit height for scrolling */
+  overflow-y: auto; /* Enable scrolling if content exceeds max height */
+}
+
+#reminderList li {
+  padding: 10px; /* Adequate padding for list items */
+  background-color: #444; /* Darker background for list items */
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between list items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  color: #e0e0e0; /* Light text color for visibility */
+}
+
+#reminderList li:hover {
+  background-color: #555; /* Lighten on hover */
+}
+
+/* Styling for past reminders */
+#reminderList li.past {
+  color: #777; /* Gray for past reminders */
+  text-decoration: line-through;
+}
+
+/* Styling for interactive feel */
+input:focus, button:focus {
+  outline: none;
+  border-color: #0056b3; /* Blue outline on focus */
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Blue glow on focus */
+}
+/* Centering the heading and form */
+h2 {
+  color: #0056b3; /* PakWheels blue */
+  font-size: 1.5em;
+  margin-bottom: 15px; /* Margin below heading */
+  text-align: center; /* Center the heading text */
+}
+
+/* Form container styling */
+form {
+  position: relative; /* Relative positioning for layering */
+  background-color: rgba(18, 18, 18, 0.8); /* Slightly transparent background for the form */
+  padding: 20px; /* Adjust padding for a comfortable size */
+  border-radius: 8px; /* Rounded corners */
+  z-index: 1; /* Ensure form is above the background */
+  margin: 0 auto; /* Center the form */
+  max-width: 300px; /* Maximum width for form */
+}
+
+/* Centering the list and other elements */
+#reminderList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Margin above the list */
+  max-height: 300px; /* Optional: Limit height for scrolling */
+  overflow-y: auto; /* Enable scrolling if content exceeds max height */
+  text-align: center; /* Center the list items */
+}

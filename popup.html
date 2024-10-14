@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Extension</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-logo"></div> <!-- Logo container -->
+    <h2>Set a Reminder</h2>
+    <form id="reminderForm">
+        <input type="text" id="reminder" placeholder="Reminder note" required>
+        <input type="time" id="reminderTime" required>
+        <button type="submit" id="addReminder">Add Reminder</button>
+        <button type="button" id="clearAll">Clear All</button> <!-- Ensure type is button -->
+    </form>
+    <ul id="reminderList"></ul> <!-- Reminder list -->
+
+    <script src="popup.js"></script>
+</body>
+</html>
